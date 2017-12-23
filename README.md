@@ -1,6 +1,6 @@
 # Integer Linked List
 
-It demonstrates how linked list will work in action. This is an example from Deitel book (C how to program) but the problem is that the book code won't compile and it has memory leak issues.
+It demonstrates how linked list will work in action. This is an example from Deitel book (C how to program) but the problem is that the linked list source code in the book won't compile and it has memory leak issue (added a deleteAll function to avoid memory leak ).
 So I improved it a little bit. I struggled a lot when I started programming becasue this was my first book and it really confused me with pointers. I hope the code that I provided could
 help others understand pointers and especially linked list better. In my opinion the best book to learn C (especially pointers subject) is Programming in C by Stephen G. Kochan.
 
