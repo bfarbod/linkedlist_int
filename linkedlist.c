@@ -2,6 +2,8 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
+bool global_deleted = false;
+
 
 typedef struct _entry
 {
@@ -59,12 +61,10 @@ int main ()
             {
               printf ("\nEnter a value to be deleted: ");
               scanf ("%i", &value);
-              // if the pointer location ( tempHeadPtr ) was changed then the node has been deleted
-              entry *tempHeadPtr = delete (startPtr, value);
-              if ( tempHeadPtr != startPtr )
+              startPtr = delete (startPtr, value);
+              if ( global_deleted )
                 {
                   printf ("\n\"%i\" was deleted\n", value);
-                  startPtr = tempHeadPtr;
                   printList (startPtr);
                 }
 
@@ -237,6 +237,7 @@ entry * delete (entry *list_pointer, int value)
       tempPtr = list_pointer;
       list_pointer = list_pointer -> next;
       free (tempPtr);
+      global_deleted = true;
       return list_pointer;
     }
 
@@ -257,11 +258,13 @@ entry * delete (entry *list_pointer, int value)
           tempPtr = currentPtr;
           previousPtr -> next = currentPtr -> next;
           free (tempPtr);
+          global_deleted = true;
           return head;
         }
     }
 
   // if node couldn't be found then return the head of linked list
+  global_deleted = false;
   return head;
 }
 
