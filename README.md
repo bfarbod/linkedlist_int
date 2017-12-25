@@ -15,11 +15,11 @@ For Linux:<br />
     
 For Windows:<br />
     1. Use visual studio (You don't need to install a compiler it has its own)<br />
-        * [Visual Studio Installation Guide](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio)<br />
+          * [Visual Studio Installation Guide](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio)<br />
     2. Use Code::Blocks editor and MinGW as compiler( I take no responsiblity towards the links that I provided if you don't trust them use Visual Studio):<br />
-        * [Code::Blocks Download](http://codeblocks.org/downloads/26) <br />
-        * [MinGW Download Link](https://sourceforge.net/projects/mingw-w64/)<br />
-        * [MinGW Installation Guide for Code::Blocks](http://wiki.codeblocks.org/index.php/MinGW_installation)<br />
+          * [Code::Blocks Download](http://codeblocks.org/downloads/26) <br />
+          * [MinGW Download Link](https://sourceforge.net/projects/mingw-w64/)<br />
+          * [MinGW Installation Guide for Code::Blocks](http://wiki.codeblocks.org/index.php/MinGW_installation)<br />
 
 
 ### Compilation
